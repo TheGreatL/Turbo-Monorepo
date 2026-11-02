@@ -95,3 +95,9 @@ When using this template to start a new application:
 
 3. **Explore Flows**:
    Type `/ask-matt` in your agent prompt to determine the best workflow for your next feature or refactor.
+
+4. **Configure Custom Agents & Skills for Your Needs**:
+   This boilerplate provides a stack-agnostic foundation with shared engineering skills, but deliberately avoids prescribing rigid agent roles out of the box. Once you start building your application, you will need to set up custom agents and skills tailored to your specific needs:
+   * **Domain-Specific Agents**: Define custom subagents or specialist personas (e.g., database schema auditors, API design agents, accessibility reviewers) under your harness configuration.
+   * **App-Specific Skills**: Add custom skills for your specific framework, deployment targets, or team conventions.
+   * **Steering Updates**: Tailor `AGENTS.md` and `CLAUDE.md` with coding standards, package boundaries, and architecture guidelines unique to your stack.
