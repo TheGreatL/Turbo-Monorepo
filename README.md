@@ -58,6 +58,27 @@ This repository is pre-configured with agent skills designed to support end-to-e
 
 ---
 
+## Prerequisites
+
+Before using or cloning this repository, ensure you have:
+
+1. **Git**: Installed with your identity configured:
+   ```bash
+   git config --global user.name "Your Name"
+   git config --global user.email "your.email@example.com"
+   ```
+
+2. **AI Coding Harness**: An environment that reads `AGENTS.md` or `CLAUDE.md` and supports skills (e.g., Google Antigravity, Claude Code, Cursor, Codex).
+
+3. **GitHub CLI (`gh`)**: Required for agent-driven issue tracking, ticketing (`/to-tickets`), and wayfinding:
+   * **Windows**: `winget install GitHub.cli`
+   * **macOS**: `brew install gh`
+   * **Linux**: `sudo apt install gh`
+   * **Authentication**: Run `gh auth login` once per machine.
+   * *(Note: If you do not use GitHub, run `/setup-matt-pocock-skills` to switch to local markdown issues).*
+
+---
+
 ## Getting Started With a New Project
 
 When using this template to start a new application:
