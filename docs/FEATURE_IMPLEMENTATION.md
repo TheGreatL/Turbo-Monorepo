@@ -39,18 +39,18 @@ Design before coding. Keep modules deep:
 
 ---
 
-### Phase 3: Test-Driven Development (TDD)
-Never write implementation code without a failing test first:
+### Phase 3: Test-Driven Development (TDD) & The Three-Tier Test Rule
+Every feature implementation requires test equivalence. No feature is complete without corresponding tests across the three testing tiers:
 
-1. **RED**:
-   * Write an automated test exercising the expected behavior through the public interface.
-   * Run the test and verify that it fails **for the expected reason** (not due to syntax or import typos).
-2. **GREEN**:
-   * Write the minimum production code necessary to make the test pass.
-   * Resist adding speculative features, parameters, or edge-case handling not demanded by the test.
-3. **REFACTOR**:
-   * Clean up the implementation: eliminate duplication, improve names, extract cohesive private helpers.
-   * Ensure all tests remain green.
+1. **The Three Testing Tiers**:
+   * **Unit Test**: Test business logic, pure calculations, algorithms, and domain models in complete isolation. Fast, deterministic, in-memory execution at module seams.
+   * **Supertest (Integration / API Test)**: Test HTTP endpoints, API contracts, middleware, route controllers, and status codes using Supertest (or framework equivalent) against the mounted application without external mocks.
+   * **End-to-End (E2E) Test**: Test end-to-end user and system journeys across the entire application stack, verifying real state persistence, auth flow, and full vertical workflows.
+
+2. **The TDD Cycle (Red-Green-Refactor)**:
+   * **RED**: Write an automated test exercising the expected behavior through the public interface. Run it and verify that it fails **for the expected reason**.
+   * **GREEN**: Write the minimum production code necessary to make the test pass.
+   * **REFACTOR**: Clean up the implementation: eliminate duplication, enforce deep module boundaries, and ensure all tests stay green across all 3 tiers.
 
 ---
 

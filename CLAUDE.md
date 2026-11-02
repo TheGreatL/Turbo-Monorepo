@@ -2,15 +2,15 @@
 
 Boilerplate template for monorepo applications.
 
-## Engineering standards & workflows
+## Rules & engineering standards
 
 ### Feature implementation
 
-Gold Standard 5-phase lifecycle (Understand -> Seam Design -> TDD -> Two-Axis Review -> Commit/PR). Follow on all feature additions and bug fixes. See `docs/FEATURE_IMPLEMENTATION.md`.
+Gold Standard 5-phase lifecycle (Understand -> Seam Design -> TDD -> Two-Axis Review -> Commit/PR). Every feature requires test equivalence across three tiers: Unit Test, Supertest (API/Integration), and End-to-End (E2E) Test. See `docs/FEATURE_IMPLEMENTATION.md`.
 
 ### Coding standards
 
-Deep module design, strict type safety, explicit invariants, and Fowler smell baseline. Enforced during `/code-review`. See `docs/CODING_STANDARDS.md`.
+Deep module design, strict type safety, explicit invariants, 3-tier test equivalence, and Fowler smell baseline. Enforced during `/code-review`. See `docs/CODING_STANDARDS.md`.
 
 ## Agent skills
 

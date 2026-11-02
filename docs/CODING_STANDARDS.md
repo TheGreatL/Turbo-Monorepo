@@ -46,8 +46,14 @@ Every change is reviewed against Fowler's code smells (*Refactoring*, Ch. 3):
 
 ---
 
-## 5. Testability & Seams
+## 5. Testability & Three-Tier Test Equivalence
 
+Every feature must ship with test equivalence across the three testing tiers:
+
+* **Three-Tier Coverage**:
+  1. **Unit Tests**: Pure business logic, helpers, and domain models executed in isolation at defined module seams.
+  2. **Supertest (Integration / API Tests)**: HTTP routes, middleware, payload validations, and status codes tested via Supertest (or HTTP harness equivalent).
+  3. **End-to-End (E2E) Tests**: Full journey tests validating state flow and interactions across system boundaries.
 * **Test Through Public Interfaces**: Tests should exercise modules through their public interface at defined seams, not through internal private methods.
-* **Fast & Deterministic**: Unit tests must run locally in milliseconds without unmanaged external network or disk side effects.
-* **Isolated Side Effects**: Isolate I/O and external service calls behind adapters so the core domain logic remains purely testable.
+* **Fast & Deterministic**: Unit and integration tests must run quickly without unmanaged external network dependencies.
+* **Isolated Side Effects**: Isolate I/O and external service calls behind adapters so core domain logic remains purely testable.
