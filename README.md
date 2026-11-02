@@ -93,6 +93,14 @@ Comprehensive guides on using this monorepo are available in **[`docs/guides/`](
 
 ## Getting Started With a New Project
 
+### How to Use It From Here (TL;DR)
+* **When starting a new project**: Clone this repository, re-point the Git remote (`git remote set-url origin <new-url>`), and run `/setup-matt-pocock-skills`.
+* **When building features**: Simply ask your agent to build a feature or type `/ask-matt`—the agent will automatically follow the Gold Standard lifecycle, write 3-tier tests (Unit, Supertest, E2E), and perform two-axis code reviews!
+
+---
+
+### Step-by-Step Setup
+
 When using this template to start a new application:
 
 1. **Clone & Set Remote**:

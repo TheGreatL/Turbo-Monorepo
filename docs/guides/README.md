@@ -4,6 +4,18 @@ Welcome to the comprehensive documentation guides for this Turbo Monorepo boiler
 
 ---
 
+## How to Use It From Here (TL;DR)
+
+* **When starting a new project**:
+  1. Clone this boilerplate: `git clone <template-url> <my-project-name>`
+  2. Re-point the Git remote: `git remote set-url origin <new-github-repo-url>`
+  3. Run `/setup-matt-pocock-skills` inside your AI chat to configure your new GitHub Issues board and triage labels.
+* **When building features**:
+  * Simply ask your agent to build a feature or type `/ask-matt` to route your task.
+  * The agent will automatically follow the **5-phase Gold Standard lifecycle** (`docs/FEATURE_IMPLEMENTATION.md`), write **3-tier tests** (Unit, Supertest, E2E), and perform **two-axis code reviews** (`/code-review`)!
+
+---
+
 ## Guide Index
 
 | Guide | Description |
