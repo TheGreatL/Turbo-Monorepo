@@ -79,6 +79,18 @@ Before using or cloning this repository, ensure you have:
 
 ---
 
+## Documentation & Guides
+
+Comprehensive guides on using this monorepo are available in **[`docs/guides/`](docs/guides/README.md)**:
+
+* **[01. Getting Started](docs/guides/01-getting-started.md)**: Cloning, detaching remotes, and bootstrapping new projects.
+* **[02. Monorepo Structure](docs/guides/02-monorepo-structure.md)**: Deep module design, `apps/` vs `packages/`, and boundary rules.
+* **[03. Agent-Driven Development](docs/guides/03-agent-driven-development.md)**: Working with `/ask-matt`, `/grill-with-docs`, `/wayfinder`, and subagents.
+* **[04. Testing & Quality Standards](docs/guides/04-testing-and-quality.md)**: Three-tier test equivalence (Unit, Supertest, E2E) and Fowler smells baseline.
+* **[05. Domain Modeling & ADRs](docs/guides/05-domain-modeling-and-adrs.md)**: Multi-context glossaries and recording architectural decisions.
+
+---
+
 ## Getting Started With a New Project
 
 When using this template to start a new application:
